@@ -57,8 +57,13 @@ func App() *buffalo.App {
 		//  c.Value("tx").(*pop.Connection)
 		// Remove to disable this.
 		app.Use(popmw.Transaction(models.DB))
-
-		app.GET("/", HomeHandler)
+		app.GET("/tasks", TasksList)
+		app.POST("/tasks", TasksCreate)
+		app.GET("/tasks/done", TasksDone)
+		app.GET("/tasks/pending", TasksPending)
+		app.GET("/tasks/range/{from}/{to}", TasksRange)
+		app.GET("/tasks/requester/{requester}", TasksRequester)
+		app.GET("/tasks/executer/{executer}", TasksExecuter)
 	}
 
 	return app
