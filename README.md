@@ -1,35 +1,26 @@
-# Welcome to Buffalo!
+# Tasks Kata
 
-Thank you for choosing Buffalo for your web development needs.
+A client needs your help  to solve a problem about the way he is organizing stuffs he needs to be done. He would like you to develop an API that he can use in its own to handle all activities he does in everyday basis.  
 
-## Database Setup
+Use Buffalo framework to create an API that handles Task items.
 
-It looks like you chose to set up your application using a database! Fantastic!
 
-The first thing you need to do is open up the "database.yml" file and edit it to use the correct usernames, passwords, hosts, etc... that are appropriate for your environment.
+A task represents an activity or an actionable item for a group of things that needs to be done or completed. Every task has a description explaining what need to be done, a status (whether if it was done/completed or not), a completion date, the name of the person who requested the task and the name of the person who executed it.
 
-You will also need to make sure that **you** start/install the database of your choice. Buffalo **won't** install and start it for you.
+### USER STORIES
+1- As an API user I would like to see all tasks that are currently stored in tasks storage.   
+2- As an API user I would like to be able to create tasks and add it to the tasks storage.  
+3- As an API user I would like to request all tasks that needs to be done.  
+4- As an API user I would like to request all tasks that are done.  
+5- As an API user I would like to request all tasks done in a specific time range.  
+6- As an API user I would like to request all tasks done by a specific person.  
+7- As an API user I would like to request all tasks requested by a specific person.  
 
-### Create Your Databases
 
-Ok, so you've edited the "database.yml" file and started your database, now Buffalo can create the databases in that file for you:
+### NON FUNCTIONAL REQUIREMENTS
+API should only speak JSON language.
+Follow TDD approach to solve the problem.
+Enjoy and have fun.
 
-	$ buffalo pop create -a
 
-## Starting the Application
-
-Buffalo ships with a command that will watch your application and automatically rebuild the Go binary and any assets for you. To do that run the "buffalo dev" command:
-
-	$ buffalo dev
-
-If you point your browser to [http://127.0.0.1:3000](http://127.0.0.1:3000) you should see a "Welcome to Buffalo!" page.
-
-**Congratulations!** You now have your Buffalo application up and running.
-
-## What Next?
-
-We recommend you heading over to [http://gobuffalo.io](http://gobuffalo.io) and reviewing all of the great documentation there.
-
-Good luck!
-
-[Powered by Buffalo](http://gobuffalo.io)
+**GOAL**: Start to get deeper with TDD by applying it when you're developing Buffalo Apps.
