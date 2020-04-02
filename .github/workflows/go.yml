@@ -31,6 +31,7 @@ jobs:
         run: go get -v -t -d ./...
         env: 
           GOPROXY: https://proxy.golang.org
+          GO111MODULE: on
 
       - name: Test
         run: buffalo test ./... -v
