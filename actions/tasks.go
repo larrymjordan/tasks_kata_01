@@ -1,8 +1,8 @@
 package actions
 
 import (
+	"github.com/larrymjordan/tasks/models"
 	"net/http"
-	"tasks/models"
 	"time"
 
 	"github.com/gobuffalo/buffalo"

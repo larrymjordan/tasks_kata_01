@@ -2,8 +2,9 @@ package actions
 
 import (
 	"net/http"
-	"tasks/models"
 	"time"
+
+	"github.com/larrymjordan/tasks/models"
 
 	"github.com/gobuffalo/httptest"
 	"github.com/gofrs/uuid"

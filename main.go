@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"tasks/actions"
+	"github.com/larrymjordan/tasks/actions"
 )
 
 // main is the starting point for your Buffalo application.
